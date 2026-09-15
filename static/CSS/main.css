@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins',sans-serif;
+}
+
+.porfolio-container{
+    min-height: 100vh;
+    min-width:100vh;
+    display: flex;
+}
+.nav-list h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 45vh;
+    color: rgb(255, 255, 255);
+}
+.nav-list{
+    position: fixed;
+    position: absolute;
+    display: flex;
+    gap: 3rem;
+    height: 15vh;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.nav-list li{
+    list-style: none; 
+}
+.nav-list li a{
+    font-weight: bold;
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.left, .right{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+
+}
+.left{
+    padding-left: 3rem;
+    background:#262625;
+    width: 80%
+}
+.right{
+    background:linear-gradient(-45deg,#d5eb88,#262625 92%);
+    width: 20%;
+    padding-left: 3rem;
+}
+.icons .fa-brands{
+    transition: .5s ease;
+    color: #fff;
+    font-size: 1.7rem;
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#ffffff, #738003);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.3rem;
+
+
+}
+.content{
+
+    margin-left: 4rem;
+}
+.content .intro{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    
+}
+.content #element {
+    font-size: 3rem;
+    color: #15e215;
+    
+}
+.content .detail{
+    max-width: 60%;
+    color: #fff;
+    line-height: 1.8rem;
+    margin: 1.1rem 0 1.8rem 0;
+}
+.content span{
+    color: #15e2c0;
+}
+
+.btn button{
+    border: .13rem solid #cee215;
+    font-size: 1.1rem;
+    padding: .7rem 2.5rem;
+    border-radius:2rem;
+    cursor: pointer;
+    transition: .9s  ease;
+    text-transform: capitalize;
+}
+button:nth-child(2){
+    background: transparent;
+    color: #cee215;
+}
+button:nth-child(1){
+    margin-right: 1.1rem;
+    background: #cee215;
+    color: #262625;
+}
+button:nth-child(2):hover{
+    background: #cee215;
+    color: #262625
+}
+button:nth-child(1):hover{
+    background:transparent;
+    color: #cee215;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%, #262625 50%);
+    width: 30rem;
+
+}
+.circle:nth-child(2){
+    background-image: url("img.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 26rem;
+    box-shadow: 0 0 1rem #fff,
+    inset 0 0 1rem #ffffff,
+    0 0 2rem #cee215,
+    inset 0 0 2rem #cee215,
+    0 0 4rem #cee215,
+    inset 0 0 4rem #cee215;
+    border:.22rem solid #ffffff;
+
+}
+
+.nav-list li a::after, .nav-list .active::after{
+    content: "";
+    background: #cee215;
+    height: .1rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transition: transform .5s;
+    transform: scaleX(0);
+}
+.nav-list li a:hover::after, .nav-list .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-list li a:hover{
+    transition: .5s ease;
+    color: #fff;
+    
+}
+
+.contents{
+    padding-left: 3rem;
+    background-color: #262625;
+    height: 100vh;
+}
+.contents h2{
+    text-transform: uppercase;
+    justify-content: left;
+    color: #fff;
+    padding-top: 15px;
+    transition: .8s ease;
+    
+}
+.contents p{
+    
+    max-width: 50%;
+    justify-content: left;
+    color: #ffffff;
+}
+.contents h2:hover{
+    color: #cee215;
+}
